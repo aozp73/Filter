@@ -9,6 +9,7 @@ import shop.mtcoding.filter.config.filter.MyBlackListFilter;
 @Configuration
 public class FilterRegisterConfig {
 
+    // 명시적으로 컨테이너에 등록
     @Bean
     public FilterRegistrationBean<?> blackListFilter() {
         FilterRegistrationBean<MyBlackListFilter> registraion = new FilterRegistrationBean<>();
